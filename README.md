@@ -1,4 +1,4 @@
-# Projet ChepMedia
+# Projet Chepify
 
 ## Backend
 ### Fonctionnalités
@@ -23,4 +23,4 @@
 ### Fonctionnalités
 
 ### Techno
-
+- MongoDB ????
