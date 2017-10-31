@@ -15,28 +15,52 @@
      * Get an `Html` object by calling the built-in Play welcome
      * template and passing a `String` message.
      *@
-    <div class="ui container">
-        <div class="ui vertically divided grid">
-            <div class="two column row">
-                <div class="column">
-                    <h1>Welcome</h1>
-                </div>
-                <div class="column">
-                    <p>#jul</p>
-                </div>
-            </div>
-            <div class="three column row">
-                <div class="column">
-                    <p>adc</p>
-                </div>
-                <div class="column">
-                    <p>zac</p>
-                </div>
-                <div class="column">
-                    <p>vaerv</p>
-                </div>
-            </div>
-        </div>
-    </div>
+
+	@*
+	* Menu bar
+	*@
+	<div class="ui inverted segment">
+		<div class="ui inverted secondary pointing menu">
+			<div class="ui container">
+				<a href="#" class="header item">
+					<img class="logo" src="assets/images/logo.png"> @* Favicon à changer *@
+					Chepify
+				</a>
+				<a href="#" class="item active">Bibliothèque</a>
+				<div class="ui simple dropdown item">
+					Autres actions <i class="caret down icon"></i>
+					<div class="menu">
+						<a class="item" href="#">Upload</a>
+						<a class="item" href="#">Option 2</a>
+					</div>
+				</div>
+				<div class="right menu">
+					<a class="ui item">
+						Logout
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="ui main text container">
+		<h1 class="ui header">Texte</h1>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin nec orci ut pulvinar. Mauris ut egestas ipsum. Pellentesque nec maximus nibh.
+			Nullam a neque est. Fusce cursus purus ac hendrerit pretium. Phasellus tempus eu ante id convallis. Vivamus molestie massa urna, sit amet rutrum nunc
+			ornare nec. Cras fringilla dapibus dolor, vitae fermentum mi iaculis at. Praesent tincidunt elementum felis et volutpat. Morbi ligula nibh, malesuada
+			id urna nec, mollis egestas sapien. Phasellus dictum purus id ligula condimentum interdum.
+			<br/>
+			Praesent tristique erat tortor, ut imperdiet eros fringilla a. Curabitur mattis non nibh sit amet suscipit. Nulla nunc orci, consectetur id ex vel,
+			ornare imperdiet elit. Sed pharetra ultricies tincidunt. Morbi et nunc ac mi dapibus pulvinar a in nunc. Ut eu feugiat magna. Phasellus in lectus
+			fringilla, feugiat orci et, pulvinar enim. Praesent accumsan interdum tellus, at venenatis tortor blandit et. Fusce eu venenatis tellus. Sed vitae
+			tincidunt nulla. Pellentesque lectus lectus, vehicula in pharetra eu, faucibus ut ipsum. Curabitur in nisi tellus. Cras quis condimentum diam. Praesent
+			laoreet auctor lectus, et ornare urna ultrices iaculis. Vivamus aliquet venenatis tincidunt.
+			<br/>
+			<br/>
+			str passé a la page : @message
+		</p>
+	</div>
 
 }
