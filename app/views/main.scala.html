@@ -4,6 +4,7 @@
  * two arguments, a `String` for the title of the page and an `Html`
  * object to insert into the body of the page.
  *@
+    @import services.Db
 @(title: String)(content: Html)
 
 <!DOCTYPE html>
@@ -27,9 +28,10 @@
         <script src="@routes.Assets.versioned("javascripts/react-dom.min.js")" type="text/javascript"></script>
 
     </head>
-    <body>
+    <body> 
         @* And here's where we render the `Html` object containing
          * the page content. *@
         @content
+        @Db.PrinterTest("Edgar")
     </body>
 </html>
