@@ -1,0 +1,34 @@
+@(chansons: Seq[Chanson], form: Form[Chanson])(implicit messages: play.api.i18n.Messages, request: RequestHeader, csrfConfig: play.filters.csrf.CSRFConfig)
+
+@main("Chansons Formulaire") {
+
+
+	<h1>Bo Formulaire</h1>
+	<table>
+		<thead>
+			<tr><th>Titre</th><th>Artiste</th><th>Album</th></tr>
+		</thead>
+		<tbody>
+		@for(c <- chansons) {
+			<tr><td>@c.titre</td><td>@c.artiste</td><td>@c.album</td></tr>
+		}
+		</tbody>
+	</table>
+
+	<hr/>
+	<div class="ui container">
+	@helper.form(routes.FormController.createChanson, 'class -> "ui form") {
+		<div class="field">
+			@helper.inputText(form("titre"))
+		</div>
+		<div class="field">
+			@helper.inputText(form("artiste"))
+		</div>
+		<div class="field">
+			@helper.inputText(form("album"))
+		</div>
+		<button type="submit" class="ui button">Créer Chanson</button>
+	</div>
+	}
+
+}
