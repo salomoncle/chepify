@@ -36,4 +36,5 @@ class ApplicationTimer @Inject() (clock: Clock, appLifecycle: ApplicationLifecyc
     Logger.info(s"ApplicationTimer demo: Stopping application at ${clock.instant} after ${runningTime}s.")
     Future.successful(())
   }
+
 }

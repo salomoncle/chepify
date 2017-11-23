@@ -25,3 +25,11 @@
 
 ### Techno
 - MongoDB ????
+
+# Priorité
+- Driver BDD (Clément)
+- Front (Ronan)
+- Player (Clément & Edgar)
+- Upload (Edgar)
+- Login (Romain)
+- Recherche

@@ -9,12 +9,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
         @* Here's where we render the page title `String`. *@
         <title>@title</title>
 
-        @*<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">*@
-        @*<link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">*@
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
 
         @* Jquery *@
         <script src="@routes.Assets.versioned("javascripts/jquery-3.2.1.min.js")" type="text/javascript"></script>
@@ -26,24 +25,11 @@
         @* ReactJS *@
         <script src="@routes.Assets.versioned("javascripts/react.min.js")" type="text/javascript"></script>
         <script src="@routes.Assets.versioned("javascripts/react-dom.min.js")" type="text/javascript"></script>
+
     </head>
     <body>
-        <div id="root"></div>
-        <script src="@routes.Assets.versioned("javascripts/helloworld.js")" type="text/javascript">
-        </script>
-        <script  type="text/javascript">
-
-    </script>
-
-
-            @* And here's where we render the `Html` object containing
-            * the page content. *@
-            @content
-
-
-
-
-
-
-        </body>
+        @* And here's where we render the `Html` object containing
+         * the page content. *@
+        @content
+    </body>
 </html>
