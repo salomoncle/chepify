@@ -7,6 +7,7 @@
 - recherche 
 - subtitles
 - video & music
+- radio
 
 ### Techno
 - scala play
