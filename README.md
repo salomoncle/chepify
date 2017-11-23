@@ -1,9 +1,9 @@
 # Projet Chepify
 
 ## Ressources
-- Git Flight Rules : https://github.com/k88hudson/git-flight-rules 
-- Awesome Scala : https://github.com/lauris/awesome-scala
-- React : https://github.com/enaqx/awesome-react
+ - Git Flight Rules : https://github.com/k88hudson/git-flight-rules 
+ - Awesome Scala : https://github.com/lauris/awesome-scala
+ - React : https://github.com/enaqx/awesome-react
 
 ## Backend
 ### Fonctionnalités
@@ -12,7 +12,6 @@
 - recherche 
 - subtitles
 - video & music
-- radio
 
 ### Techno
 - scala play
@@ -38,4 +37,3 @@
 - Upload (Edgar)
 - Login (Romain)
 - Recherche
-
