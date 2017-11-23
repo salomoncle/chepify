@@ -7,6 +7,7 @@ import reactivemongo.bson.{
 }
 
 object Db {
+ /*
   // My settings (see available connection options)
   val mongoUri = "mongodb://localhost:27017/mydb?authMode=scram-sha1"
 
@@ -55,4 +56,5 @@ object Db {
     print("Bonjour $message")
   }
   case class Person(firstName: String, lastName: String, age: Int)
+  */
 }
